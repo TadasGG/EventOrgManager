@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/icon": "^1.15.0",
+    "@nuxt/image": "^1.11.0",
+    "@nuxt/ui": "^3.3.6",
+    "@nuxtjs/i18n": "^10.1.0",
+    "@sidebase/nuxt-auth": "^0.9.3",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.0.0",
+    "maska": "^3.2.0",
+    "next-auth": "~4.21.1",
+    "nuxt": "^3.19.2",
+    "nuxt-color-picker": "^1.2.8",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1"
+  }
+}

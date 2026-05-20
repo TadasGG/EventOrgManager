@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+    --primary-color-light: #fff;
+    --secondary-color-light: #fff;
+    --primary-color-dark: #1c1c1c;
+    --secondary-color-dark: #1c1c1c;
+    --button-color-light: #fff;
+    --object-color-light: #fff;
+    --secondary-object-color-light: #fff;
+    --button-color-dark: #1c1c1c;
+    --object-color-dark: #1c1c1c;
+    --secondary-object-color-dark: #1c1c1c;
+}
+
+.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+
+    --primary-color: var(--primary-color-light);
+    --secondary-color: var(--secondary-color-light);
+    --button-color: var(--button-color-light);
+    --object-color: var(--object-color-light);
+    --secondary-object-color: var(--secondary-object-color-light);
+
+    --third-color: #e4e4e4;
+}
+
+.dark {
+    --background-color: #1c1c1c;
+    --text-color: #fff;
+
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+    --button-color: var(--button-color-dark);
+    --object-color: var(--object-color-dark);
+    --secondary-object-color: var(--secondary-object-color-dark);
+
+    --third-color: #8f8f8f;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.border {
+    border-color: var(--object-color);
+}
+
+.object-item {
+    background-color: var(--object-color);
+    color: var(--text-color);
+}
+
+.secondary-object-item {
+    background-color: var(--secondary-object-color);
+    color: #000;
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.sub-item-color {
+    background-color: var(--third-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.sidebar-item {
+    width: 100%;
+    justify-content: left;
+    justify-self: center;
+}
+
+.sidebar-item:hover {
+    background-color: var(--button-color);
+    scale: 110%;
+}
+
+.button-item {
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.button-item-selected {
+    background-color: color-mix(
+            in srgb,
+            var(--button-color) 80%,
+            black
+    );
+    color: var(--text-color);
+}
+
+.button-item:hover {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    scale: 105%;
+}
+
+.text-color {
+    color: var(--text-color);
+}
